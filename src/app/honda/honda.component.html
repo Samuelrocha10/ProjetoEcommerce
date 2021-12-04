@@ -1,0 +1,18 @@
+<div class="container ">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a [routerLink]="['/home']" routerLinkActive="active">Inicio</a></li>
+        <li class="breadcrumb-item" [routerLink]="['/honda']" routerLinkActive="active">carrohonda</li>
+      </ol>
+    </nav>
+  </div>
+<div class="carros">
+<div class="carrosCss" *ngFor = "let honda of carrohonda">
+    <p>{{honda.nome}}</p>
+    <p>{{honda.valor}}</p>
+    <p>{{honda.cor}}</p>
+    <img [src]= "honda.imagem" >
+
+</div>
+</div>
+
